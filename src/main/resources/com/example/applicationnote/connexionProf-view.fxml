@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicationnote.ConnexionProfController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #CCE2FF;" />
+      <Pane layoutX="250.0" prefHeight="500.0" prefWidth="550.0">
+         <children>
+            <Label layoutX="275.0" layoutY="54.0" prefHeight="60.0" prefWidth="260.0" text="CONNEXION" textAlignment="RIGHT">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="236.0" prefHeight="28.0" prefWidth="173.0" text="CODE :" />
+            <Label layoutX="40.0" layoutY="274.0" prefHeight="28.0" prefWidth="173.0" text="NOM ET PRENOM :" />
+            <Label layoutX="40.0" layoutY="312.0" prefHeight="28.0" prefWidth="173.0" text="MOT DE PASSE :" />
+            <Label layoutX="40.0" layoutY="352.0" prefHeight="28.0" prefWidth="173.0" text="CONFIRMATION :" />
+            <TextField fx:id="codeProf" layoutX="213.0" layoutY="236.0" prefHeight="28.0" prefWidth="200.0" promptText="votre code" />
+            <TextField fx:id="nomProf" layoutX="213.0" layoutY="274.0" prefHeight="28.0" prefWidth="200.0" promptText="votre nom" />
+            <TextField fx:id="MotProf" layoutX="213.0" layoutY="312.0" prefHeight="28.0" prefWidth="200.0" promptText="votre mot de passe" />
+            <TextField fx:id="confirmation" layoutX="213.0" layoutY="352.0" prefHeight="28.0" prefWidth="200.0" promptText="confirmation de mort de passe" />
+            <Button fx:id="inscription" layoutX="58.0" layoutY="429.0" mnemonicParsing="false" onAction="#connexion" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: #3134FF;" text="CONNEXION" textFill="WHITE" />
+            <Label layoutX="189.0" layoutY="429.0" prefHeight="37.0" prefWidth="160.0" text="vous avez deja un compte ?" />
+            <Hyperlink fx:id="connexion" layoutX="349.0" layoutY="429.0" onAction="#rediriger" prefHeight="37.0" prefWidth="111.0" text="Connectez-vous">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

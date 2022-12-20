@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicationnote.ConnexionController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="351.0" style="-fx-background-color: #E3D0FF;" />
+      <Pane layoutX="351.0" prefHeight="500.0" prefWidth="555.0">
+         <children>
+             <Label layoutX="26.0" layoutY="174.0" prefHeight="28.0" prefWidth="173.0" text="NOM :" />
+             <Label layoutX="26.0" layoutY="236.0" prefHeight="28.0" prefWidth="173.0" text="MOT DE PASSE : " />
+             <Button fx:id="connexionConnexion" layoutX="45.0" layoutY="430.0" mnemonicParsing="false" onAction="#connexion" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: #3134FF;" text="CONNEXION" textFill="WHITE">
+                 <font>
+                     <Font size="15.0" />
+                 </font>
+             </Button>
+             <TextField fx:id="nomConnexion" layoutX="249.0" layoutY="174.0" prefHeight="28.0" prefWidth="190.0" promptText="Votre nom" />
+             <PasswordField fx:id="motDePasseConnexion" layoutX="249.0" layoutY="236.0" prefHeight="28.0" prefWidth="190.0" promptText="Votre mot de passe" />
+             <Label fx:id="erreurConnexion" layoutX="63.0" layoutY="394.0" prefHeight="28.0" prefWidth="378.0" textFill="RED" />
+            <Label layoutX="171.0" layoutY="430.0" prefHeight="37.0" prefWidth="163.0" text="Vous n'avez pas de compte? ">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="lienInscription" layoutX="334.0" layoutY="430.0" onAction="#rediriger" prefHeight="37.0" prefWidth="137.0" text="Inscrivez-vous">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
