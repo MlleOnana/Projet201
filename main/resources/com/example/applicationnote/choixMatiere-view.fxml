@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicationnote.ChoixMatiereController">
+   <children>
+      <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="286.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../arrow-left.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retourB" layoutX="274.0" layoutY="20.0" mnemonicParsing="false" onAction="#retour" opacity="0.44" prefHeight="50.0" prefWidth="58.0" style="-fx-border-color: grey; -fx-border-width: 2px;" />
+      <Pane prefHeight="500.0" prefWidth="250.0" style="-fx-border-color: grey;">
+         <children>
+            <ImageView fitHeight="263.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../5cffb14515fc58000159c236.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="utilisateurs" layoutY="250.0" mnemonicParsing="false" onAction="#consultationListeUser" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #cacaca;" text="Liste des etudiants">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="deconnexion" layoutY="300.0" mnemonicParsing="false" onAction="#deconnecter" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #cacaca;" text="Deconnexion">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </children>
+</AnchorPane>

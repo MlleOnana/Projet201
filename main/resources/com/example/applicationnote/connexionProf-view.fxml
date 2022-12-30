@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicationnote.ConnexionProfController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #CCE2FF;" />
+      <Pane layoutX="250.0" prefHeight="500.0" prefWidth="550.0">
+         <children>
+            <Label layoutX="275.0" layoutY="54.0" prefHeight="60.0" prefWidth="260.0" text="CONNEXION" textAlignment="RIGHT">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="243.0" prefHeight="28.0" prefWidth="173.0" text="CODE :" />
+            <Label layoutX="40.0" layoutY="298.0" prefHeight="28.0" prefWidth="173.0" text="MOT DE PASSE :" />
+            <TextField fx:id="codeProf" layoutX="213.0" layoutY="243.0" prefHeight="28.0" prefWidth="200.0" promptText="votre code" />
+            <TextField fx:id="motProf" layoutX="213.0" layoutY="298.0" prefHeight="28.0" prefWidth="200.0" promptText="votre mot de passe" />
+            <Button fx:id="inscription" layoutX="58.0" layoutY="429.0" mnemonicParsing="false" onAction="#connexion" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: #3134FF;" text="CONNEXION" textFill="WHITE" />
+            <Label layoutX="189.0" layoutY="429.0" prefHeight="37.0" prefWidth="160.0" text="vous avez deja un compte ?" />
+            <Hyperlink fx:id="connexion" layoutX="349.0" layoutY="429.0" onAction="#rediriger" prefHeight="37.0" prefWidth="111.0" text="Connectez-vous">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Text layoutX="254.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cette partie est reservée aux professeur utilisant l'application pour remplir les notes" wrappingWidth="250.0">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="165.0" fitWidth="179.0" layoutX="44.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../5cffb14515fc58000159c236.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="erreurConnexion" layoutX="87.0" layoutY="392.0" prefHeight="28.0" prefWidth="312.0" textFill="RED" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

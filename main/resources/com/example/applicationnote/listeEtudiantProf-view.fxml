@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applicationnote.ListeEtudiantProfController">
+   <children>
+      <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="51.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../arrow-left.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retourB" layoutX="39.0" layoutY="41.0" mnemonicParsing="false" onAction="#retour" opacity="0.44" prefHeight="50.0" prefWidth="58.0" style="-fx-border-color: grey; -fx-border-width: 2px;" />
+   </children>
+</AnchorPane>
